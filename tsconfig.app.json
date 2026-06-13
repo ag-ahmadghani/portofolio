@@ -21,6 +21,9 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
 
+    /* Membungkam error deprecation TS 7.0 secara paksa */
+    "ignoreDeprecations": "6.0", 
+
     "paths": {
       "@/*": [
         "./src/*"
