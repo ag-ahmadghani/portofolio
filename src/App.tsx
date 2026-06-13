@@ -6,20 +6,17 @@ import ScrollReveal from '@/components/ScrollReveal';
 import SplitText from '@/components/SplitText';
 import { SiReact, SiTypescript, SiTailwindcss } from 'react-icons/si';
 import { Badge } from "@/components/ui/badge"
-import { FaExternalLinkAlt, FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub, FaLinkedin } from "react-icons/fa";
 import BorderGlow from '@/components/BorderGlow';
 import GlassIcons from '@/components/GlassIcons';
 import { Button } from "@/components/ui/button"
 import {
   Card,
-  CardAction,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import MagnetLines from '@/components/MagnetLines';
-import ProfileCard from '@/components/ProfileCard';
 import { Timeline } from 'antd';
 
 function App() {
