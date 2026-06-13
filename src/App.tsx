@@ -112,7 +112,7 @@ memiliki semangat belajar tinggi dan selalu berusaha berkembang di dunia teknolo
           </div>
 
           <div className='relative w-[300px] h-[300px] bg-[#1677ff] rounded-r-full overflow-visible z-10'>
-            <img src="src/assets/no_bg_gani.png" alt="profile" className='w-[350px] h-[350px] absolute object-cover bg-center -top-12 rounded-r-[45%]'/>
+            <img src="public/no_bg_gani.png" alt="profile" className='w-[350px] h-[350px] absolute object-cover bg-center -top-12 rounded-r-[45%]'/>
           </div>
         </div>
         </ScrollReveal>
