@@ -6,7 +6,7 @@ import ScrollReveal from '@/components/ScrollReveal';
 import SplitText from '@/components/SplitText';
 import { SiReact, SiTypescript, SiTailwindcss } from 'react-icons/si';
 import { Badge } from "@/components/ui/badge"
-import { FaExternalLinkAlt, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import BorderGlow from '@/components/BorderGlow';
 import GlassIcons from '@/components/GlassIcons';
 import { Button } from "@/components/ui/button"
@@ -27,9 +27,9 @@ function App() {
   ];
 
   const items = [
-    { icon: <FaGithub />, color: 'blue', label: 'Github', href: 'https://github.com/ag-ahmadghani' },
-    { icon: <FaLinkedin />, color: 'purple', label: 'Linkedin', href: 'https://www.linkedin.com/in/ahmad-ghani-900440354/' },
-    // { icon: <FaInstagram />, color: 'red', label: 'Instagram', href: 'https://www.instagram.com/ag_ahmadghani/' },
+    { icon: <FaGithub />, color: 'purple', label: 'Github', href: 'https://github.com/ag-ahmadghani' },
+    { icon: <FaLinkedin />, color: 'blue', label: 'Linkedin', href: 'https://www.linkedin.com/in/ahmad-ghani-900440354/' },
+    { icon: <FaWhatsapp />, color: 'green', label: 'Whatsapp', href: 'https://www.me/6285774722326' },
   ];
   
 
@@ -54,7 +54,7 @@ function App() {
     />
     <div className="pointer-events-none absolute inset-0 z-10 flex flex-col items-center justify-center gap-4 px-4 text-center">
       <SplitText
-        text="Welcome to my portfolio"
+        text="Welcome to Ghani's portfolio"
         tag="h1"
         className="text-3xl font-bold text-white sm:text-4xl md:text-5xl"
         splitType="chars"
@@ -107,11 +107,11 @@ JavaScript, serta framework seperti Laravel, NextJS, ExpressJS serta Flutter. Ak
 dan beberapa proyek kolaboratif yang melatih kemampuan kepemimpinan dan manajemen waktu. Saya
 memiliki semangat belajar tinggi dan selalu berusaha berkembang di dunia teknologi yang dinamis.</p>
             <div style={{position: 'relative' }}>
-              <GlassIcons items={items} className="custom-class text-xs"/>
+              <GlassIcons items={items} className="custom-class text-white text-xs"/>
             </div>
           </div>
 
-          <div className='relative w-[300px] h-[300px] bg-[#1677ff] rounded-r-full overflow-visible z-10'>
+          <div className='relative mt-75 md:mt-40 w-[300px] h-[300px] bg-[#1677ff] rounded-r-full overflow-visible z-10 lg:mt-0'>
             <img src="/no_bg_gani.png" alt="profile" className='w-[350px] h-[350px] absolute object-cover bg-center -top-12 rounded-r-[45%]'/>
           </div>
         </div>
@@ -159,6 +159,11 @@ memiliki semangat belajar tinggi dan selalu berusaha berkembang di dunia teknolo
         </ScrollReveal>
       </section>
       <section id="education" className='flex pt-35 pb-35 flex-col lg:flex-row justify-between w-full max-w-[750px] px-4 h-full items-center gap-8 scroll-mt-20'>
+        <ScrollReveal delay={100}>
+          <div className='order-1 lg:order-2'>
+            <h1 className='text-4xl font-bold text-[#1677ff]'>Education</h1>
+          </div>
+        </ScrollReveal>
         <ScrollReveal>
         <div className='text-white max-w-[370px] w-full order-2 lg:order-1'>
           <Timeline
@@ -170,7 +175,6 @@ memiliki semangat belajar tinggi dan selalu berusaha berkembang di dunia teknolo
                 backgroundColor: 'grey'
               }
             }}
-            mode='end'
             items={[
               {
                 content: <div>
@@ -189,11 +193,6 @@ memiliki semangat belajar tinggi dan selalu berusaha berkembang di dunia teknolo
               },
             ]}
           />
-        </div>
-        </ScrollReveal>
-        <ScrollReveal delay={100}>
-        <div className='order-1 lg:order-2'>
-          <h1 className='text-4xl font-bold text-[#1677ff]'>Education</h1>
         </div>
         </ScrollReveal>
       </section>
@@ -235,9 +234,43 @@ memiliki semangat belajar tinggi dan selalu berusaha berkembang di dunia teknolo
                   </CardDescription>
                 </CardHeader>
                 <CardFooter className='bg-[#121212] border-none'>
-                  <a href="#">
+                  {/* <a href="#">
                     <FaExternalLinkAlt className='text-[#1677ff]' />
-                  </a>
+                  </a> */}
+                </CardFooter>
+              </Card>
+            </BorderGlow>
+          </div>
+          <div>
+            <BorderGlow
+              edgeSensitivity={30}
+              glowColor="40 80 80"
+              backgroundColor="#120F17"
+              borderRadius={16}
+              glowRadius={40}
+              glowIntensity={1}
+              coneSpread={25}
+              animated={false}
+              colors={['#c084fc', '#f472b6', '#38bdf8']}
+            >
+              <Card className="w-[350px] bg-[#121212]">
+                <CardHeader>
+                  <CardTitle className='text-white'>
+                    <div className='flex flex-col gap-2'>
+                      <h1 className='text-2xl font-bold'>WebGIS</h1>
+                      <div className='flex gap-1 flex-wrap'>
+                        <Badge variant="outline" className='text-[#1677ff] border-[#1677ff] bg-[#121212]'>NextJS</Badge>
+                      </div>
+                    </div>
+                  </CardTitle>
+                  <CardDescription className='flex flex-col gap-2 mt-5'>
+                    <p className='text-gray-300'>Kontribusi pengerjaan frontend website mengguakan nextjs untuk aplikasi webgis yang terhubung untuk mengelola data geospasial</p>
+                  </CardDescription>
+                </CardHeader>
+                <CardFooter className='bg-[#121212] border-none'>
+                  {/* <a href="#">
+                    <FaExternalLinkAlt className='text-[#1677ff]' />
+                  </a> */}
                 </CardFooter>
               </Card>
             </BorderGlow>
@@ -342,9 +375,9 @@ memiliki semangat belajar tinggi dan selalu berusaha berkembang di dunia teknolo
                   </CardDescription>
                 </CardHeader>
                 <CardFooter className='bg-[#121212] border-none'>
-                  <a href="#">
+                  {/* <a href="#">
                     <FaExternalLinkAlt className='text-[#1677ff]' />
-                  </a>
+                  </a> */}
                 </CardFooter>
               </Card>
             </BorderGlow>

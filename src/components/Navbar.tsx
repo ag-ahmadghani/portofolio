@@ -31,13 +31,13 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`max-w-screen fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled || menuOpen
           ? 'bg-black/70 backdrop-blur-xl border-b border-white/10'
           : 'bg-transparent'
       }`}
     >
-      <nav className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4 sm:px-6">
+      <nav className="mx-auto flex h-14 max-w-screen items-center justify-between px-4 sm:px-6">
         <a
           href="#home"
           onClick={(e) => { e.preventDefault(); handleNavClick('#home'); }}

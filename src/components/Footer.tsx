@@ -1,8 +1,9 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 
 const socialLinks = [
   { icon: <FaGithub />, label: 'Github', href: 'https://github.com/ag-ahmadghani' },
   { icon: <FaLinkedin />, label: 'Linkedin', href: 'https://www.linkedin.com/in/ahmad-ghani-900440354/' },
+  { icon: <FaWhatsapp />, label: 'Whatsapp', href: 'https://www.me/6285774722326' },
 ];
 
 const quickLinks = [
